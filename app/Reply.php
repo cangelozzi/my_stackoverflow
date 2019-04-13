@@ -7,6 +7,10 @@ use App\User;
 
 class Reply extends Model
 {
+
+    // Mass assignment handle
+    protected $guarded = [];
+
     // Reply belongs to ONE Question
     public function question()
     {
