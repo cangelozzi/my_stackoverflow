@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Question;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+use App\Http\Resources\QuestionResource;
+use App\Http\Requests\QuestionRequest;
 
 class QuestionController extends Controller
 {
@@ -14,18 +17,10 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        //
+        // filter result through Resource for ALL the responses
+        return QuestionResource::collection(Question::latest()->get());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -35,7 +30,11 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // fields to store, all from table.
+        // user_id filled according to which user is logged
+        //auth()->user()->question()->create($request->all());
+        Question::create($request->all());
+        return response('Question Created', Response::HTTP_CREATED);
     }
 
     /**
@@ -46,18 +45,8 @@ class QuestionController extends Controller
      */
     public function show(Question $question)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Question  $question
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Question $question)
-    {
-        //
+        //! $question - route model binding, returning via QuestinResource to better display
+        return new QuestionResource($question);
     }
 
     /**
@@ -69,7 +58,8 @@ class QuestionController extends Controller
      */
     public function update(Request $request, Question $question)
     {
-        //
+        $question->update($request->all());
+        return response('Question Updated', Response::HTTP_ACCEPTED);
     }
 
     /**
@@ -80,6 +70,7 @@ class QuestionController extends Controller
      */
     public function destroy(Question $question)
     {
-        //
+        $question->delete();
+        return response('Question Deleted', Response::HTTP_NO_CONTENT);
     }
 }
