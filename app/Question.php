@@ -9,6 +9,17 @@ use App\User;
 
 class Question extends Model
 {
+
+  // Mass Assignment fix, which fields to pass thorugh request
+    //protected $fillable = ['title', 'url_question', 'body', 'category_id', 'user_id'];
+    protected $guarded = [];
+
+    // use url_name in place of id for Route Model Binding
+    public function getRouteKeyName()
+    {
+        return 'url_question';
+    }
+
     // Question belongs to ONE User
     public function user()
     {
@@ -25,5 +36,11 @@ class Question extends Model
     public function category()
     {
         return  $this->belongsTo(Category::class);
+    }
+
+    // define and get the route Path
+    public function getPathAttribute()
+    {
+        return asset("api/question/$this->url_question");
     }
 }
