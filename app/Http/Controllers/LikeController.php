@@ -8,6 +8,18 @@ use Illuminate\Http\Request;
 
 class LikeController extends Controller
 {
+
+    //! JWT AUTH Middleware to allow like and unlike just with token (logged in)
+    /**
+     * Create a new AuthController instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('JWT');
+    }
+
     public function like(Reply $reply)
     {
         // only the authenticated user can like a reply
