@@ -1,20 +1,20 @@
 <template>
-  <v-toolbar>
+  <v-toolbar
+    flat
+    color="#FAFAFA"
+  >
     <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
     <v-toolbar-title>My Stackoverflow</v-toolbar-title>
     <v-spacer></v-spacer>
     <div class="hidden-sm-and-down">
 
-      <router-link to="/">
-        <v-btn flat>Home</v-btn>
-      </router-link>
-
-      <v-btn flat>Questions</v-btn>
-
-      <v-btn flat>Categories</v-btn>
-
-      <router-link to="/login">
-        <v-btn flat>LOG IN</v-btn>
+      <router-link
+        v-for="item in items"
+        :key="item.title"
+        :to="item.to"
+        v-if="item.show"
+      >
+        <v-btn flat>{{item.title}}</v-btn>
       </router-link>
 
     </div>
@@ -22,7 +22,24 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    data() {
+      return {
+        items: [
+          { title: "Home", to: "/home", show: true },
+          { title: "Questions", to: "/ask", show: User.loggedIn() },
+          { title: "Category", to: "/category", show: User.loggedIn() },
+          { title: "Login", to: "/login", show: !User.loggedIn() },
+          { title: "Logout", to: "/logout", show: User.loggedIn() }
+        ]
+      };
+    },
+    created() {
+      EventBus.$on("logout", () => {
+        User.logout();
+      });
+    }
+  };
 </script>
 
 <style>

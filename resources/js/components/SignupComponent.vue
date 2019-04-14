@@ -5,39 +5,56 @@
       <div class='window'>
         <div class='overlay'></div>
         <div class='content'>
-          <div class='welcome'>Login Here!</div>
+          <div class='welcome'>Register Here!</div>
 
           <form
             class='input-fields'
-            @submit.prevent="login"
+            @submit.prevent="signup"
           >
-            <!-- <input
+            <input
               type='text'
-              placeholder='Username'
+              placeholder='name'
               class='input-line full-width'
-            ></input> -->
+              v-model="form.name"
+              required
+            ></input>
+            <span
+              class="red--text"
+              v-if="errors.name"
+            >{{errors.name[0]}}</span>
             <input
               type='email'
               placeholder='Email'
               class='input-line full-width'
               v-model="form.email"
+              required
             ></input>
+            <span
+              class="red--text"
+              v-if="errors.email"
+            >{{errors.email[0]}}</span>
             <input
               type='password'
               placeholder='Password'
               class='input-line full-width'
               v-model="form.password"
+              required
+            ></input>
+            <span
+              class="red--text"
+              v-if="errors.password"
+            >{{errors.password[0]}}</span>
+            <input
+              type='password'
+              placeholder='Confirm Password'
+              class='input-line full-width'
+              v-model="form.password_confirmation"
+              required
             ></input>
             <div><button
                 type='submit'
                 class='ghost-round full-width'
-              >Login</button></div>
-            <router-link to="/signup">
-              <button
-                type='submit'
-                class='ghost-round full-width su_btn'
-              >Sign Up</button>
-            </router-link>
+              >Signup</button></div>
           </form>
         </div>
       </div>
@@ -51,9 +68,12 @@
     data() {
       return {
         form: {
+          name: null,
           email: null,
-          password: null
-        }
+          password: null,
+          password_confirmation: null
+        },
+        errors: {}
       };
     },
     created() {
@@ -62,8 +82,14 @@
       }
     },
     methods: {
-      login() {
-        User.login(this.form);
+      signup() {
+        axios
+          .post("/api/auth/signup", this.form)
+          .then(res => {
+            User.responseAfterLogin(res);
+            this.$router.push({ name: "home" });
+          })
+          .catch(error => (this.errors = error.response.data.errors));
       }
     }
   };
@@ -135,13 +161,6 @@ button:focus {
   margin-bottom: 25px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-}
-
-.su_btn {
-  background: -webkit-linear-gradient(#b982e2, #f7b37d);
-  background: linear-gradient(#b982e2, #f7b37d);
-  color: rgb(228, 226, 226);
-  font-weight: bold;
 }
 
 .ghost-round:hover {
@@ -248,8 +267,8 @@ button:focus {
 }
 
 .overlay {
-  background: -webkit-linear-gradient(#8ca6db, #b993d6);
-  background: linear-gradient(#8ca6db, #b993d6);
+  background: -webkit-linear-gradient(#ec25db, #ff7a0e);
+  background: linear-gradient(#ec25db, #ff7a0e);
   opacity: 0.85;
   filter: alpha(opacity=85);
   height: 560px;

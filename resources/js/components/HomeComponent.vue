@@ -15,6 +15,9 @@
       toolbarcomponent,
       footercomponent,
       login
+    },
+    data() {
+      return {};
     }
   };
 </script>
