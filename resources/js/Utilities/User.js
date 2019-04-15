@@ -18,7 +18,7 @@ class User {
         const username = res.data.user;
 
         if (Token.isValid(access_token)) {
-            TokenStorage.store(username, access_token)
+            TokenStorage.store(username, access_token);
             window.location = '/home';
         }
     }

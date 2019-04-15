@@ -11,7 +11,7 @@
 <body>
     <div id="app">
         <v-app>
-            <homecomponent></homecomponent>
+            <appcomponent></appcomponent>
         </v-app>
     </div>
 
