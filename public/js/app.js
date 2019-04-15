@@ -2086,7 +2086,7 @@ __webpack_require__.r(__webpack_exports__);
         to: "/home",
         show: true
       }, {
-        title: "Questions",
+        title: "Ask Questions",
         to: "/ask",
         show: User.loggedIn()
       }, {
@@ -6570,7 +6570,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\ninput[data-v-4d2414bf] {\n  border: none;\n}\nbutton[data-v-4d2414bf]:focus {\n  outline: none;\n}\n[data-v-4d2414bf]::-webkit-input-placeholder {\n  color: rgba(255, 255, 255, 0.65);\n}\n::-webkit-input-placeholder .input-line[data-v-4d2414bf]:focus + ::input-placeholder {\n  color: #fff;\n}\n.highlight[data-v-4d2414bf] {\n  color: rgba(255, 255, 255, 0.8);\n  font-weight: 400;\n  cursor: pointer;\n  transition: color 0.2s ease;\n}\n.highlight[data-v-4d2414bf]:hover {\n  color: #fff;\n  transition: color 0.2s ease;\n}\n.spacing[data-v-4d2414bf] {\n  flex-grow: 1;\n  height: 120px;\n  font-weight: 300;\n  text-align: center;\n  margin-top: 10px;\n  color: rgba(255, 255, 255, 0.65);\n}\n.input-line[data-v-4d2414bf]:focus {\n  outline: none;\n  border-color: #fff;\n  transition: all 0.2s ease;\n}\n.ghost-round[data-v-4d2414bf] {\n  cursor: pointer;\n  background: none;\n  border: 1px solid rgba(255, 255, 255, 0.65);\n  border-radius: 25px;\n  color: rgba(255, 255, 255, 0.65);\n  align-self: flex-end;\n  font-size: 19px;\n  font-size: 1.2rem;\n  font-family: roboto;\n  font-weight: 300;\n  line-height: 2.5em;\n  margin-top: 60px;\n  margin-bottom: 25px;\n  transition: all 0.2s ease;\n}\n.su_btn[data-v-4d2414bf] {\n  background: linear-gradient(#b982e2, #f7b37d);\n  color: rgb(228, 226, 226);\n  font-weight: bold;\n}\n.ghost-round[data-v-4d2414bf]:hover {\n  background: rgba(255, 255, 255, 0.15);\n  color: #fff;\n  transition: all 0.2s ease;\n}\n.input-line[data-v-4d2414bf] {\n  background: none;\n  margin-bottom: 10px;\n  line-height: 2.4em;\n  color: #fff;\n  font-family: roboto;\n  font-weight: 300;\n  letter-spacing: 0px;\n  letter-spacing: 0.02rem;\n  font-size: 19px;\n  font-size: 1.2rem;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.65);\n  transition: all 0.2s ease;\n}\n.full-width[data-v-4d2414bf] {\n  width: 100%;\n}\n.input-fields[data-v-4d2414bf] {\n  margin-top: 25px;\n}\n.container[data-v-4d2414bf] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n}\n.content[data-v-4d2414bf] {\n  padding-left: 25px;\n  padding-right: 25px;\n  display: flex;\n  flex-flow: column;\n  z-index: 5;\n}\n.welcome[data-v-4d2414bf] {\n  font-weight: 200;\n  margin-top: 75px;\n  text-align: center;\n  font-size: 40px;\n  font-size: 2.5rem;\n  letter-spacing: 0px;\n  letter-spacing: 0.05rem;\n}\n.subtitle[data-v-4d2414bf] {\n  text-align: center;\n  line-height: 1em;\n  font-weight: 100;\n  letter-spacing: 0px;\n  letter-spacing: 0.02rem;\n}\n.menu[data-v-4d2414bf] {\n  background: rgba(0, 0, 0, 0.2);\n  width: 100%;\n  height: 50px;\n}\n.window[data-v-4d2414bf] {\n  z-index: 100;\n  color: #fff;\n  font-family: roboto;\n  position: relative;\n  display: flex;\n  flex-flow: column;\n  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);\n  box-sizing: border-box;\n  height: 560px;\n  width: 360px;\n  background: #fff;\n}\n.overlay[data-v-4d2414bf] {\n  background: linear-gradient(#8ca6db, #b993d6);\n  opacity: 0.85;\n  filter: alpha(opacity=85);\n  height: 560px;\n  position: absolute;\n  width: 360px;\n  z-index: 1;\n}\n.bold-line[data-v-4d2414bf] {\n  background: #e7e7e7;\n  position: absolute;\n  top: 0px;\n  bottom: 0px;\n  margin: auto;\n  width: 100%;\n  height: 360px;\n  z-index: 1;\n  opacity: 0.1;\n  background-size: cover;\n}\n@media (max-width: 500px) {\n.window[data-v-4d2414bf] {\n    width: 100%;\n    height: 100%;\n}\n.overlay[data-v-4d2414bf] {\n    width: 100%;\n    height: 100%;\n}\n}\n", ""]);
+exports.push([module.i, "\ninput[data-v-4d2414bf] {\n  border: none;\n}\nbutton[data-v-4d2414bf]:focus {\n  outline: none;\n}\n[data-v-4d2414bf]::-webkit-input-placeholder {\n  color: rgba(255, 255, 255, 0.65);\n}\n::-webkit-input-placeholder .input-line[data-v-4d2414bf]:focus + ::input-placeholder {\n  color: #fff;\n}\n.highlight[data-v-4d2414bf] {\n  color: rgba(255, 255, 255, 0.8);\n  font-weight: 400;\n  cursor: pointer;\n  transition: color 0.2s ease;\n}\n.highlight[data-v-4d2414bf]:hover {\n  color: #fff;\n  transition: color 0.2s ease;\n}\n.spacing[data-v-4d2414bf] {\n  flex-grow: 1;\n  height: 120px;\n  font-weight: 300;\n  text-align: center;\n  margin-top: 10px;\n  color: rgba(255, 255, 255, 0.65);\n}\n.input-line[data-v-4d2414bf]:focus {\n  outline: none;\n  border-color: #fff;\n  transition: all 0.2s ease;\n}\n.ghost-round[data-v-4d2414bf] {\n  cursor: pointer;\n  background: none;\n  border: 1px solid rgba(255, 255, 255, 0.65);\n  border-radius: 25px;\n  color: rgba(255, 255, 255, 0.65);\n  align-self: flex-end;\n  font-size: 19px;\n  font-size: 1.2rem;\n  font-family: roboto;\n  font-weight: 300;\n  line-height: 2.5em;\n  margin-top: 60px;\n  margin-bottom: 25px;\n  transition: all 0.2s ease;\n}\n.si_btn[data-v-4d2414bf] {\n  background-color: rgba(255, 255, 255, 0.65);\n  color: #b993d6;\n}\n.ghost-round[data-v-4d2414bf]:hover {\n  background: rgba(255, 255, 255, 0.15);\n  color: #fff;\n  transition: all 0.2s ease;\n}\n.input-line[data-v-4d2414bf] {\n  background: none;\n  margin-bottom: 10px;\n  line-height: 2.4em;\n  color: #fff;\n  font-family: roboto;\n  font-weight: 300;\n  letter-spacing: 0px;\n  letter-spacing: 0.02rem;\n  font-size: 19px;\n  font-size: 1.2rem;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.65);\n  transition: all 0.2s ease;\n}\n.full-width[data-v-4d2414bf] {\n  width: 100%;\n}\n.input-fields[data-v-4d2414bf] {\n  margin-top: 25px;\n}\n.container[data-v-4d2414bf] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n}\n.content[data-v-4d2414bf] {\n  padding-left: 25px;\n  padding-right: 25px;\n  display: flex;\n  flex-flow: column;\n  z-index: 5;\n}\n.welcome[data-v-4d2414bf] {\n  font-weight: 200;\n  margin-top: 75px;\n  text-align: center;\n  font-size: 40px;\n  font-size: 2.5rem;\n  letter-spacing: 0px;\n  letter-spacing: 0.05rem;\n}\n.subtitle[data-v-4d2414bf] {\n  text-align: center;\n  line-height: 1em;\n  font-weight: 100;\n  letter-spacing: 0px;\n  letter-spacing: 0.02rem;\n}\n.menu[data-v-4d2414bf] {\n  background: rgba(0, 0, 0, 0.2);\n  width: 100%;\n  height: 50px;\n}\n.window[data-v-4d2414bf] {\n  z-index: 100;\n  color: #fff;\n  font-family: roboto;\n  position: relative;\n  display: flex;\n  flex-flow: column;\n  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);\n  box-sizing: border-box;\n  height: 560px;\n  width: 360px;\n  background: #fff;\n}\n.overlay[data-v-4d2414bf] {\n  background: linear-gradient(#8ca6db, #b993d6);\n  opacity: 0.85;\n  filter: alpha(opacity=85);\n  height: 560px;\n  position: absolute;\n  width: 360px;\n  z-index: 1;\n}\n.bold-line[data-v-4d2414bf] {\n  background: #e7e7e7;\n  position: absolute;\n  top: 0px;\n  bottom: 0px;\n  margin: auto;\n  width: 100%;\n  height: 360px;\n  z-index: 1;\n  opacity: 0.1;\n  background-size: cover;\n}\n@media (max-width: 500px) {\n.window[data-v-4d2414bf] {\n    width: 100%;\n    height: 100%;\n}\n.overlay[data-v-4d2414bf] {\n    width: 100%;\n    height: 100%;\n}\n}\n", ""]);
 
 // exports
 
@@ -6589,7 +6589,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\ninput[data-v-e902aeac] {\n  border: none;\n}\nbutton[data-v-e902aeac]:focus {\n  outline: none;\n}\n[data-v-e902aeac]::-webkit-input-placeholder {\n  color: rgba(255, 255, 255, 0.65);\n}\n::-webkit-input-placeholder .input-line[data-v-e902aeac]:focus + ::input-placeholder {\n  color: #fff;\n}\n.highlight[data-v-e902aeac] {\n  color: rgba(255, 255, 255, 0.8);\n  font-weight: 400;\n  cursor: pointer;\n  transition: color 0.2s ease;\n}\n.highlight[data-v-e902aeac]:hover {\n  color: #fff;\n  transition: color 0.2s ease;\n}\n.spacing[data-v-e902aeac] {\n  flex-grow: 1;\n  height: 120px;\n  font-weight: 300;\n  text-align: center;\n  margin-top: 10px;\n  color: rgba(255, 255, 255, 0.65);\n}\n.input-line[data-v-e902aeac]:focus {\n  outline: none;\n  border-color: #fff;\n  transition: all 0.2s ease;\n}\n.ghost-round[data-v-e902aeac] {\n  cursor: pointer;\n  background: none;\n  border: 1px solid rgba(255, 255, 255, 0.65);\n  border-radius: 25px;\n  color: rgba(255, 255, 255, 0.65);\n  align-self: flex-end;\n  font-size: 19px;\n  font-size: 1.2rem;\n  font-family: roboto;\n  font-weight: 300;\n  line-height: 2.5em;\n  margin-top: 60px;\n  margin-bottom: 25px;\n  transition: all 0.2s ease;\n}\n.ghost-round[data-v-e902aeac]:hover {\n  background: rgba(255, 255, 255, 0.15);\n  color: #fff;\n  transition: all 0.2s ease;\n}\n.input-line[data-v-e902aeac] {\n  background: none;\n  margin-bottom: 10px;\n  line-height: 2.4em;\n  color: #fff;\n  font-family: roboto;\n  font-weight: 300;\n  letter-spacing: 0px;\n  letter-spacing: 0.02rem;\n  font-size: 19px;\n  font-size: 1.2rem;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.65);\n  transition: all 0.2s ease;\n}\n.full-width[data-v-e902aeac] {\n  width: 100%;\n}\n.input-fields[data-v-e902aeac] {\n  margin-top: 25px;\n}\n.container[data-v-e902aeac] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n}\n.content[data-v-e902aeac] {\n  padding-left: 25px;\n  padding-right: 25px;\n  display: flex;\n  flex-flow: column;\n  z-index: 5;\n}\n.welcome[data-v-e902aeac] {\n  font-weight: 200;\n  margin-top: 75px;\n  text-align: center;\n  font-size: 40px;\n  font-size: 2.5rem;\n  letter-spacing: 0px;\n  letter-spacing: 0.05rem;\n}\n.subtitle[data-v-e902aeac] {\n  text-align: center;\n  line-height: 1em;\n  font-weight: 100;\n  letter-spacing: 0px;\n  letter-spacing: 0.02rem;\n}\n.menu[data-v-e902aeac] {\n  background: rgba(0, 0, 0, 0.2);\n  width: 100%;\n  height: 50px;\n}\n.window[data-v-e902aeac] {\n  z-index: 100;\n  color: #fff;\n  font-family: roboto;\n  position: relative;\n  display: flex;\n  flex-flow: column;\n  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);\n  box-sizing: border-box;\n  height: 560px;\n  width: 360px;\n  background: #fff;\n}\n.overlay[data-v-e902aeac] {\n  background: linear-gradient(#ec25db, #ff7a0e);\n  opacity: 0.85;\n  filter: alpha(opacity=85);\n  height: 560px;\n  position: absolute;\n  width: 360px;\n  z-index: 1;\n}\n.bold-line[data-v-e902aeac] {\n  background: #e7e7e7;\n  position: absolute;\n  top: 0px;\n  bottom: 0px;\n  margin: auto;\n  width: 100%;\n  height: 360px;\n  z-index: 1;\n  opacity: 0.1;\n  background-size: cover;\n}\n@media (max-width: 500px) {\n.window[data-v-e902aeac] {\n    width: 100%;\n    height: 100%;\n}\n.overlay[data-v-e902aeac] {\n    width: 100%;\n    height: 100%;\n}\n}\n", ""]);
+exports.push([module.i, "\ninput[data-v-e902aeac] {\n  border: none;\n}\nbutton[data-v-e902aeac]:focus {\n  outline: none;\n}\n[data-v-e902aeac]::-webkit-input-placeholder {\n  color: rgba(255, 255, 255, 0.65);\n}\n::-webkit-input-placeholder .input-line[data-v-e902aeac]:focus + ::input-placeholder {\n  color: #fff;\n}\n.highlight[data-v-e902aeac] {\n  color: rgba(255, 255, 255, 0.8);\n  font-weight: 400;\n  cursor: pointer;\n  transition: color 0.2s ease;\n}\n.highlight[data-v-e902aeac]:hover {\n  color: #fff;\n  transition: color 0.2s ease;\n}\n.spacing[data-v-e902aeac] {\n  flex-grow: 1;\n  height: 120px;\n  font-weight: 300;\n  text-align: center;\n  margin-top: 10px;\n  color: rgba(255, 255, 255, 0.65);\n}\n.input-line[data-v-e902aeac]:focus {\n  outline: none;\n  border-color: #fff;\n  transition: all 0.2s ease;\n}\n.ghost-round[data-v-e902aeac] {\n  cursor: pointer;\n  background-color: rgba(255, 255, 255, 0.65);\n  border: 1px solid rgba(255, 255, 255, 0.65);\n  border-radius: 25px;\n  color: #f87f38;\n  align-self: flex-end;\n  font-size: 19px;\n  font-size: 1.2rem;\n  font-family: roboto;\n  font-weight: 300;\n  line-height: 2.5em;\n  margin-top: 60px;\n  margin-bottom: 25px;\n  transition: all 0.2s ease;\n}\n.ghost-round[data-v-e902aeac]:hover {\n  background: rgba(255, 255, 255, 0.15);\n  color: #fff;\n  transition: all 0.2s ease;\n}\n.input-line[data-v-e902aeac] {\n  background: none;\n  margin-bottom: 10px;\n  line-height: 2.4em;\n  color: #fff;\n  font-family: roboto;\n  font-weight: 300;\n  letter-spacing: 0px;\n  letter-spacing: 0.02rem;\n  font-size: 19px;\n  font-size: 1.2rem;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.65);\n  transition: all 0.2s ease;\n}\n.full-width[data-v-e902aeac] {\n  width: 100%;\n}\n.input-fields[data-v-e902aeac] {\n  margin-top: 25px;\n}\n.container[data-v-e902aeac] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100%;\n}\n.content[data-v-e902aeac] {\n  padding-left: 25px;\n  padding-right: 25px;\n  display: flex;\n  flex-flow: column;\n  z-index: 5;\n}\n.welcome[data-v-e902aeac] {\n  font-weight: 200;\n  margin-top: 75px;\n  text-align: center;\n  font-size: 40px;\n  font-size: 2.5rem;\n  letter-spacing: 0px;\n  letter-spacing: 0.05rem;\n}\n.subtitle[data-v-e902aeac] {\n  text-align: center;\n  line-height: 1em;\n  font-weight: 100;\n  letter-spacing: 0px;\n  letter-spacing: 0.02rem;\n}\n.menu[data-v-e902aeac] {\n  background: rgba(0, 0, 0, 0.2);\n  width: 100%;\n  height: 50px;\n}\n.window[data-v-e902aeac] {\n  z-index: 100;\n  color: #fff;\n  font-family: roboto;\n  position: relative;\n  display: flex;\n  flex-flow: column;\n  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);\n  box-sizing: border-box;\n  height: 560px;\n  width: 360px;\n  background: #fff;\n}\n.overlay[data-v-e902aeac] {\n  background: linear-gradient(#e956dd, #f79648);\n  opacity: 0.85;\n  filter: alpha(opacity=85);\n  height: 560px;\n  position: absolute;\n  width: 360px;\n  z-index: 1;\n}\n.bold-line[data-v-e902aeac] {\n  background: #e7e7e7;\n  position: absolute;\n  top: 0px;\n  bottom: 0px;\n  margin: auto;\n  width: 100%;\n  height: 360px;\n  z-index: 1;\n  opacity: 0.1;\n  background-size: cover;\n}\n@media (max-width: 500px) {\n.window[data-v-e902aeac] {\n    width: 100%;\n    height: 100%;\n}\n.overlay[data-v-e902aeac] {\n    width: 100%;\n    height: 100%;\n}\n}\n", ""]);
 
 // exports
 
@@ -38226,7 +38226,7 @@ var render = function() {
                 _c(
                   "button",
                   {
-                    staticClass: "ghost-round full-width su_btn",
+                    staticClass: "ghost-round full-width",
                     attrs: { type: "submit" }
                   },
                   [_vm._v("Sign Up")]
@@ -38248,7 +38248,10 @@ var staticRenderFns = [
     return _c("div", [
       _c(
         "button",
-        { staticClass: "ghost-round full-width", attrs: { type: "submit" } },
+        {
+          staticClass: "ghost-round full-width si_btn",
+          attrs: { type: "submit" }
+        },
         [_vm._v("Login")]
       )
     ])
@@ -38331,7 +38334,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "input-line full-width",
-                attrs: { type: "text", placeholder: "name", required: "" },
+                attrs: { type: "text", placeholder: "Name", required: "" },
                 domProps: { value: _vm.form.name },
                 on: {
                   input: function($event) {
@@ -38520,7 +38523,12 @@ var render = function() {
     "v-toolbar",
     { attrs: { flat: "", color: "#FAFAFA" } },
     [
-      _c("v-toolbar-title", [_vm._v("My Stackoverflow")]),
+      _c("v-toolbar-title", [
+        _c("span", { staticStyle: { "font-weight": "200" } }, [
+          _vm._v("My Stack")
+        ]),
+        _vm._v("overflow")
+      ]),
       _vm._v(" "),
       _c("v-spacer"),
       _vm._v(" "),
@@ -79338,69 +79346,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/Utilities/AppStorage.js":
-/*!**********************************************!*\
-  !*** ./resources/js/Utilities/AppStorage.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var AppStorage =
-/*#__PURE__*/
-function () {
-  function AppStorage() {
-    _classCallCheck(this, AppStorage);
-  }
-
-  _createClass(AppStorage, [{
-    key: "storeToken",
-    value: function storeToken(token) {
-      localStorage.setItem('token', token);
-    }
-  }, {
-    key: "storeUser",
-    value: function storeUser(user) {
-      localStorage.setItem('user', user);
-    }
-  }, {
-    key: "store",
-    value: function store(user, token) {
-      this.storeToken(token);
-      this.storeUser(user);
-    }
-  }, {
-    key: "clear",
-    value: function clear() {
-      localStorage.removeItem('token');
-      localStorage.removeItem('user');
-    }
-  }, {
-    key: "getToken",
-    value: function getToken() {
-      return localStorage.getItem('token');
-    }
-  }, {
-    key: "getUser",
-    value: function getUser() {
-      return localStorage.getItem('user');
-    }
-  }]);
-
-  return AppStorage;
-}();
-
-/* harmony default export */ __webpack_exports__["default"] = (AppStorage = new AppStorage());
-
-/***/ }),
-
 /***/ "./resources/js/Utilities/Token.js":
 /*!*****************************************!*\
   !*** ./resources/js/Utilities/Token.js ***!
@@ -79416,6 +79361,13 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+/*
+    https: //jwt.io/introduction/
+    What is the JSON Web Token structure ?
+    In its compact form, JSON Web Tokens consist of three parts separated by dots(.), which are :
+    Header, Payload, Signature
+    xxxxx.yyyyy.zzzzz
+*/
 var Token =
 /*#__PURE__*/
 function () {
@@ -79454,6 +79406,70 @@ function () {
 
 /***/ }),
 
+/***/ "./resources/js/Utilities/TokenStorage.js":
+/*!************************************************!*\
+  !*** ./resources/js/Utilities/TokenStorage.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+//! Class to handle handling LocalStorage data details from JWT
+var TokenStorage =
+/*#__PURE__*/
+function () {
+  function TokenStorage() {
+    _classCallCheck(this, TokenStorage);
+  }
+
+  _createClass(TokenStorage, [{
+    key: "storeToken",
+    value: function storeToken(token) {
+      localStorage.setItem('token', token);
+    }
+  }, {
+    key: "storeUser",
+    value: function storeUser(user) {
+      localStorage.setItem('user', user);
+    }
+  }, {
+    key: "store",
+    value: function store(user, token) {
+      this.storeToken(token);
+      this.storeUser(user);
+    }
+  }, {
+    key: "clear",
+    value: function clear() {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+    }
+  }, {
+    key: "getToken",
+    value: function getToken() {
+      return localStorage.getItem('token');
+    }
+  }, {
+    key: "getUser",
+    value: function getUser() {
+      return localStorage.getItem('user');
+    }
+  }]);
+
+  return TokenStorage;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (TokenStorage = new TokenStorage());
+
+/***/ }),
+
 /***/ "./resources/js/Utilities/User.js":
 /*!****************************************!*\
   !*** ./resources/js/Utilities/User.js ***!
@@ -79464,7 +79480,7 @@ function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Token__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Token */ "./resources/js/Utilities/Token.js");
-/* harmony import */ var _AppStorage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppStorage */ "./resources/js/Utilities/AppStorage.js");
+/* harmony import */ var _TokenStorage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TokenStorage */ "./resources/js/Utilities/TokenStorage.js");
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -79472,7 +79488,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
-
+ //! USER Class to handle auth, login, logout, LocalStorage and Token
 
 var User =
 /*#__PURE__*/
@@ -79483,60 +79499,67 @@ function () {
 
   _createClass(User, [{
     key: "login",
+    //! axios post request to login, get user data, and store token and user to LocalStorage
     value: function login(data) {
       var _this = this;
 
       axios.post('/api/auth/login', data).then(function (res) {
-        return _this.responseAfterLogin(res);
+        return _this.storeData(res);
       })["catch"](function (error) {
         return console.log(error.response.data);
       });
-    }
+    } //! store user and token to LocalStorage
+
   }, {
-    key: "responseAfterLogin",
-    value: function responseAfterLogin(res) {
+    key: "storeData",
+    value: function storeData(res) {
       var access_token = res.data.access_token;
       var username = res.data.user;
 
       if (_Token__WEBPACK_IMPORTED_MODULE_0__["default"].isValid(access_token)) {
-        _AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].store(username, access_token);
+        _TokenStorage__WEBPACK_IMPORTED_MODULE_1__["default"].store(username, access_token);
         window.location = '/home';
       }
-    }
+    } //! check token is true and valid, payload.iss is from the same server
+
   }, {
     key: "hasToken",
     value: function hasToken() {
-      var storedToken = _AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].getToken();
+      var storedToken = _TokenStorage__WEBPACK_IMPORTED_MODULE_1__["default"].getToken();
 
       if (storedToken) {
         return _Token__WEBPACK_IMPORTED_MODULE_0__["default"].isValid(storedToken) ? true : false;
       }
 
       return false;
-    }
+    } //! check if user is logged in
+
   }, {
     key: "loggedIn",
     value: function loggedIn() {
       return this.hasToken();
-    }
+    } //! User to logout
+
   }, {
     key: "logout",
     value: function logout() {
-      _AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].clear();
+      _TokenStorage__WEBPACK_IMPORTED_MODULE_1__["default"].clear();
       window.location = '/';
-    }
+    } //! get user name
+
   }, {
     key: "name",
     value: function name() {
       if (this.loggedIn()) {
-        return _AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].getUser();
+        return _TokenStorage__WEBPACK_IMPORTED_MODULE_1__["default"].getUser();
       }
-    }
+    } //! get user id from decoded JWT payload (in sub property)
+
   }, {
     key: "id",
     value: function id() {
       if (this.loggedIn()) {
-        var payload = _Token__WEBPACK_IMPORTED_MODULE_0__["default"].payload(_AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].getToken());
+        var payload = _Token__WEBPACK_IMPORTED_MODULE_0__["default"].payload(_TokenStorage__WEBPACK_IMPORTED_MODULE_1__["default"].getToken());
         return payload.sub;
       }
     }

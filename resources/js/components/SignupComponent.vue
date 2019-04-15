@@ -13,7 +13,7 @@
           >
             <input
               type='text'
-              placeholder='name'
+              placeholder='Name'
               class='input-line full-width'
               v-model="form.name"
               required
@@ -145,10 +145,10 @@ button:focus {
 
 .ghost-round {
   cursor: pointer;
-  background: none;
+  background-color: rgba(255, 255, 255, 0.65);
   border: 1px solid rgba(255, 255, 255, 0.65);
   border-radius: 25px;
-  color: rgba(255, 255, 255, 0.65);
+  color: #f87f38;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -267,8 +267,8 @@ button:focus {
 }
 
 .overlay {
-  background: -webkit-linear-gradient(#ec25db, #ff7a0e);
-  background: linear-gradient(#ec25db, #ff7a0e);
+  background: -webkit-linear-gradient(#e956dd, #f79648);
+  background: linear-gradient(#e956dd, #f79648);
   opacity: 0.85;
   filter: alpha(opacity=85);
   height: 560px;
