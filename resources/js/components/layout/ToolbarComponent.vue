@@ -4,7 +4,7 @@
     color="#FAFAFA"
   >
     <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
-    <v-toolbar-title>My Stackoverflow</v-toolbar-title>
+    <v-toolbar-title><span style="font-weight: 200;">My Stack</span>overflow</v-toolbar-title>
     <v-spacer></v-spacer>
     <div class="hidden-sm-and-down">
 
@@ -27,7 +27,7 @@
       return {
         items: [
           { title: "Home", to: "/home", show: true },
-          { title: "Questions", to: "/ask", show: User.loggedIn() },
+          { title: "Ask Questions", to: "/ask", show: User.loggedIn() },
           { title: "Category", to: "/category", show: User.loggedIn() },
           { title: "Login", to: "/login", show: !User.loggedIn() },
           { title: "Logout", to: "/logout", show: User.loggedIn() }

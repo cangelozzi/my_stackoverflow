@@ -30,12 +30,12 @@
             ></input>
             <div><button
                 type='submit'
-                class='ghost-round full-width'
+                class='ghost-round full-width si_btn'
               >Login</button></div>
             <router-link to="/signup">
               <button
                 type='submit'
-                class='ghost-round full-width su_btn'
+                class='ghost-round full-width'
               >Sign Up</button>
             </router-link>
           </form>
@@ -137,11 +137,9 @@ button:focus {
   transition: all 0.2s ease;
 }
 
-.su_btn {
-  background: -webkit-linear-gradient(#b982e2, #f7b37d);
-  background: linear-gradient(#b982e2, #f7b37d);
-  color: rgb(228, 226, 226);
-  font-weight: bold;
+.si_btn {
+  background-color: rgba(255, 255, 255, 0.65);
+  color: #b993d6;
 }
 
 .ghost-round:hover {

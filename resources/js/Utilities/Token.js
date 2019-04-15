@@ -1,3 +1,10 @@
+/*
+    https: //jwt.io/introduction/
+    What is the JSON Web Token structure ?
+    In its compact form, JSON Web Tokens consist of three parts separated by dots(.), which are :
+    Header, Payload, Signature
+    xxxxx.yyyyy.zzzzz
+*/
 class Token {
 
     isValid(token) {
