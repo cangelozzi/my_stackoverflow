@@ -41,6 +41,6 @@ class Question extends Model
     // define and get the route Path
     public function getPathAttribute()
     {
-        return asset("api/question/$this->url_question");
+        return "api/question/$this->url_question";
     }
 }

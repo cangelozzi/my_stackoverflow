@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import home from './components/HomeIntroComponent';
+import home from './components/HomeComponent';
 import login from './components/LoginComponent';
 import signup from './components/SignupComponent';
 import logout from './components/LogoutComponent';
