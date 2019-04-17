@@ -28,7 +28,7 @@
         items: [
           { title: "Home", to: "/home", show: true },
           { title: "Ask Questions", to: "/ask", show: User.loggedIn() },
-          { title: "Category", to: "/category", show: User.loggedIn() },
+          { title: "Category", to: "/category", show: User.admin() },
           { title: "Login", to: "/login", show: !User.loggedIn() },
           { title: "Logout", to: "/logout", show: User.loggedIn() }
         ]

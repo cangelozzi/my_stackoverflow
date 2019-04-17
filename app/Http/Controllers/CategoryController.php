@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+// use App\Category;
 use App\Category;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -39,8 +40,12 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        Category::create($request->all());
-        return response('Category Created', Response::HTTP_CREATED);
+
+        // create url slug from category name
+        $request['url_category'] = str_slug($request->name);
+
+        $newcat = Category::create($request->all());
+        return response($newcat, Response::HTTP_CREATED);
     }
 
     /**
@@ -70,7 +75,7 @@ class CategoryController extends Controller
                 'url_category' => str_slug($request->name) // create the "slug" version of name automatically
             ]
         );
-        return response('Category Updated', Response::HTTP_ACCEPTED);
+        return response($category, Response::HTTP_ACCEPTED);
     }
 
     /**

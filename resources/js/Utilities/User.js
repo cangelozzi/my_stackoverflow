@@ -62,6 +62,11 @@ class User {
     own(id) {
         return this.id() === id;
     }
+
+    //! set admin user
+    admin() {
+        return this.name() === 'admin';
+    }
 }
 
 export default User = new User();

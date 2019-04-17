@@ -10,17 +10,20 @@
       <v-flex xs8>
         <questioncomponent
           v-for="question in questions"
-          :key="question.title"
           :question=question
+          :key="question.title"
         ></questioncomponent>
       </v-flex>
-      Sidebar
+      <v-flex xs4>
+        <sidebarcomponent></sidebarcomponent>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
-  import questioncomponent from "./QuestionComponent";
+  import questioncomponent from "./Questions/QuestionComponent";
+  import sidebarcomponent from "./SidebarComponent.vue";
   export default {
     data() {
       return {
@@ -36,7 +39,8 @@
     },
 
     components: {
-      questioncomponent
+      questioncomponent,
+      sidebarcomponent
     }
   };
 </script>
