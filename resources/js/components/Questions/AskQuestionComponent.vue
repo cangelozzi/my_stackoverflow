@@ -20,7 +20,7 @@
 
       <v-btn
         type="submit"
-        color="#fc285d"
+        color="#91c6c6"
       >Ask</v-btn>
     </form>
   </v-container>
