@@ -7,12 +7,11 @@
             {{question.title}}
           </router-link>
         </h3>
-        <div class="grey--text">{{question.created_at}}</div>
+        <div class="grey--text">{{question.user}} - {{question.created_at}}</div>
       </div>
     </v-card-title>
 
-    <v-card-text>
-      {{question.body}}
+    <v-card-text v-html="body">
     </v-card-text>
   </v-card>
 </template>
@@ -22,6 +21,11 @@
     props: ["question"],
     data() {
       return {};
+    },
+    computed: {
+      body() {
+        return md.parse(this.question.body);
+      }
     }
   };
 </script>

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Question;
+use App\Model\Question;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use App\Http\Resources\QuestionResource;
@@ -42,11 +42,16 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        // fields to store, all from table.
+        // fields to store, all from markdown editor.
+
+        // create url slug from title
+        $request['url_question'] = str_slug($request->title);
+
         // user_id filled according to which user is logged
-        //auth()->user()->question()->create($request->all());
-        Question::create($request->all());
-        return response('Question Created', Response::HTTP_CREATED);
+        $question = auth()->user()->question()->create($request->all());
+
+        // return via QuesitonResource to be able to get the path
+        return response(new QuestionResource($question), Response::HTTP_CREATED);
     }
 
     /**

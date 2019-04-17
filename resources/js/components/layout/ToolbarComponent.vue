@@ -42,5 +42,8 @@
   };
 </script>
 
-<style>
+<style scoped>
+.v-toolbar__title {
+  font-size: 36px;
+}
 </style>

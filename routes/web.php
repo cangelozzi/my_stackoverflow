@@ -15,3 +15,4 @@ Route::view('/', 'home');
 
 // for any routes other then '/', Laravel just return home, if note Laravel views get confuesed with Vue Router paths
 Route::view('/{any}', 'home');
+Route::view('/{any}/{anything}', 'home');

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use App\User;
@@ -11,8 +11,7 @@ class Question extends Model
 {
 
   // Mass Assignment fix, which fields to pass thorugh request
-    //protected $fillable = ['title', 'url_question', 'body', 'category_id', 'user_id'];
-    protected $guarded = [];
+    protected $fillable = ['title', 'url_question', 'body', 'category_id', 'user_id'];
 
     // use url_name in place of id for Route Model Binding
     public function getRouteKeyName()
@@ -41,6 +40,6 @@ class Question extends Model
     // define and get the route Path
     public function getPathAttribute()
     {
-        return "api/question/$this->url_question";
+        return "/question/$this->url_question";
     }
 }
