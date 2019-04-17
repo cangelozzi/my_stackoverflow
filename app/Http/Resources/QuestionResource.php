@@ -21,6 +21,7 @@ class QuestionResource extends JsonResource
           'path' => $this->path,  // path is deined in function getPathAttribute() in Model
           'body' => $this->body,
           'created_at' => $this->created_at->diffForHumans(),
+          'user_id' => $this->user_id,
           'user' => $this->user->name // coming form Question User relationship
         ];
     }

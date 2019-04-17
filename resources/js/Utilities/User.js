@@ -57,6 +57,11 @@ class User {
             return payload.sub;
         }
     }
+
+    //! check which questions belong to user
+    own(id) {
+        return this.id() === id;
+    }
 }
 
 export default User = new User();

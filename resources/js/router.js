@@ -7,6 +7,8 @@ import home from './components/HomeComponent';
 import login from './components/LoginComponent';
 import signup from './components/SignupComponent';
 import logout from './components/LogoutComponent';
+import single from "./components/SingleQComponent";
+import askquestion from "./components/AskQuestionComponent";
 
 const routes = [{
     path: '/login',
@@ -21,6 +23,14 @@ const routes = [{
 }, {
     path: '/logout',
     component: logout
+}, {
+    path: '/question/:q_single',
+    component: single,
+    name: 'single'
+}, {
+    path: '/ask',
+    component: askquestion,
+    name: 'ask'
 }];
 
 const router = new VueRouter({

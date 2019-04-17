@@ -11,12 +11,20 @@ window.Vue = require('vue');
 //! Vuetify
 import Vue from 'vue';
 import Vuetify from 'vuetify';
-
 Vue.use(Vuetify);
 
+//! VueSimpleMDE Markdown Editor
+import VueSimplemde from 'vue-simplemde';
+import 'simplemde/dist/simplemde.min.css';
+Vue.use(VueSimplemde);
+import md from 'marked'; // to parse markdown to html from editor, and put it to Window obj
+window.md = md;
+
+//! User Class
 import User from './Utilities/User';
 window.User = User;
 
+//! Global EventBus
 window.EventBus = new Vue();
 
 /**
