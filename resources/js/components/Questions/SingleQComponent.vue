@@ -18,7 +18,7 @@
             <span class="grey--text">{{ question.user }} - {{ question.created_at }}</span>
           </section>
           <v-spacer></v-spacer>
-          <v-btn color="#fc285d">9 replies</v-btn>
+          <v-btn color="#fc285d">{{question.reply_count}} replies</v-btn>
         </v-card-title>
         <v-card-text v-html="body"></v-card-text>
 
@@ -41,15 +41,32 @@
 
       </v-container>
     </v-card>
+
+    <v-container>
+      <replycomponent
+        :question='question'
+        v-if="question"
+      ></replycomponent>
+
+      <newreply
+        :question_slug=question.path
+        v-if="question"
+      ></newreply>
+    </v-container>
+
   </section>
 
 </template>
 
 <script>
   import editquestion from "./EditQuestionComponent";
+  import replycomponent from "../Replies/RepliesComponent.vue";
+  import newreply from "../Replies/CreateReplyComponent.vue";
   export default {
     components: {
-      editquestion
+      editquestion,
+      replycomponent,
+      newreply
     },
     data() {
       return {

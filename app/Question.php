@@ -4,6 +4,7 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use App\User;
+use App\Reply;
 
 // use App\Reply;
 
@@ -12,6 +13,9 @@ class Question extends Model
 
   // Mass Assignment fix, which fields to pass thorugh request
     protected $fillable = ['title', 'url_question', 'body', 'category_id', 'user_id'];
+
+    //! Load replies relationship
+    protected $with = ['replies'];
 
     // use url_name in place of id for Route Model Binding
     public function getRouteKeyName()
@@ -28,7 +32,7 @@ class Question extends Model
     // Question can have MANY replies
     public function replies()
     {
-        return $this->hasMany(Reply::class);
+        return $this->hasMany(Reply::class)->latest();
     }
 
     // Question belongs to ONE category

@@ -7,14 +7,14 @@
       row
       wrap
     >
-      <v-flex xs8>
+      <v-flex xs10>
         <questioncomponent
           v-for="question in questions"
           :question=question
           :key="question.title"
         ></questioncomponent>
       </v-flex>
-      <v-flex xs4>
+      <v-flex xs2>
         <sidebarcomponent></sidebarcomponent>
       </v-flex>
     </v-layout>
