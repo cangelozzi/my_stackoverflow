@@ -3,10 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Reply;
-use App\Question;
-use App\Http\Resources\ReplyResource;
+
+
+use App\Model\Question;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\ReplyResource;
+use App\Http\Controllers\AuthController;
+use Symfony\Component\HttpFoundation\Response;
 
 class ReplyController extends Controller
 {
@@ -42,8 +46,8 @@ class ReplyController extends Controller
      */
     public function store(Question $question, Request $request)
     {
-        $question->replies()->create($request->all());
-        return response('Reply Created', Response::HTTP_CREATED);
+        $reply = $question->replies()->create($request->all());
+        return response(['reply' => new ReplyResource($reply)], Response::HTTP_CREATED);
     }
 
     /**
