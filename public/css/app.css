@@ -13,3 +13,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+[data-palette="0"] {
+  background: #f8fafc;
+  color: #292929;
+}
+
+[data-palette="1"] {
+  background: #292929;
+  color: #f8fafc;
+}
+

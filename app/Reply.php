@@ -29,10 +29,4 @@ class Reply extends Model
     {
         return  $this->belongsTo(User::class);
     }
-
-    // Reply has MANY Likes
-    public function like()
-    {
-        return  $this->hasMany(Like::class);
-    }
 }

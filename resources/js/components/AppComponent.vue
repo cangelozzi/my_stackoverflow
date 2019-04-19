@@ -2,22 +2,24 @@
   <main>
     <toolbarcomponent></toolbarcomponent>
     <router-view></router-view>
-    <!-- <footercomponent></footercomponent> -->
+    <landingpage></landingpage>
   </main>
 </template>
 
 <script>
   import toolbarcomponent from "./layout/ToolbarComponent";
-  import footercomponent from "./layout/FooterComponent.vue";
   import login from "./LoginComponent.vue";
+  import landingpage from "./layout/LandingPageComponent.vue";
   export default {
     components: {
       toolbarcomponent,
-      footercomponent,
-      login
+      login,
+      landingpage
     },
     data() {
-      return {};
+      return {
+        timelineOn: true
+      };
     }
   };
 </script>

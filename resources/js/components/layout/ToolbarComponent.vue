@@ -4,7 +4,15 @@
     color="#FAFAFA"
   >
     <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
-    <v-toolbar-title><span style="font-weight: 200;">My Stack</span>overflow</v-toolbar-title>
+    <v-toolbar-title>
+      <router-link
+        style="text-decoration: none;"
+        class="black--text"
+        to='/'
+      >
+        <span style="font-weight: 200;">My Stack</span>overflow
+      </router-link>
+    </v-toolbar-title>
     <v-spacer></v-spacer>
     <div class="hidden-sm-and-down">
 
@@ -38,7 +46,8 @@
       EventBus.$on("logout", () => {
         User.logout();
       });
-    }
+    },
+    methods: {}
   };
 </script>
 

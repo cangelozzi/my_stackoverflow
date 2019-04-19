@@ -1,13 +1,13 @@
 <template>
   <v-card>
     <v-toolbar
-      color="#f46f35"
+      color="#ea8f10"
       dark
       dense
       class="mt-2"
     >
 
-      <v-toolbar-title>Categories</v-toolbar-title>
+      <v-toolbar-title style="margin-left: 20px;">Categories</v-toolbar-title>
 
     </v-toolbar>
     <v-list>
@@ -40,5 +40,8 @@
   };
 </script>
 
-<style>
+<style scoped>
+.v-list__tile__title {
+  text-align: center;
+}
 </style>
