@@ -18,13 +18,13 @@
             ></input> -->
             <input
               type='email'
-              placeholder='Email'
+              placeholder='Email - ie. admin@admin.com'
               class='input-line full-width'
               v-model="form.email"
             ></input>
             <input
               type='password'
-              placeholder='Password'
+              placeholder='Password - ie. admin'
               class='input-line full-width'
               v-model="form.password"
             ></input>

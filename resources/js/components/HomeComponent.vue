@@ -15,7 +15,7 @@
         ></questioncomponent>
       </v-flex>
       <v-flex xs2>
-        <sidebarcomponent></sidebarcomponent>
+        <sidebarcomponent class="side"></sidebarcomponent>
       </v-flex>
     </v-layout>
   </v-container>
@@ -45,5 +45,11 @@
   };
 </script>
 
-<style>
+<style scoped>
+.container.fluid {
+  max-width: 80%;
+}
+.side {
+  width: 115%;
+}
 </style>

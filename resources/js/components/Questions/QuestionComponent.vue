@@ -3,7 +3,10 @@
     <v-card-title primary-title>
       <div>
         <h3 class="headline mb-0">
-          <router-link :to="question.path">
+          <router-link
+            :to="question.path"
+            style="text-decoration: none;"
+          >
             {{question.title}}
           </router-link>
         </h3>
